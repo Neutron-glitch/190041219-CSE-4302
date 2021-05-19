@@ -1,0 +1,187 @@
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git add readme.txt
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git commit -m"this is a new readme text file"
+[master (root-commit) 905d5a6] this is a new readme text file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.txt
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ touch readme2.txt
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        readme2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git add readme2.txt
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   readme2.txt
+
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   readme2.txt
+
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git restore --staged readme2.txt
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git satstus
+git: 'satstus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        readme2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ notepad readme.txt
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git add .
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   readme.txt
+
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git commit
+hint: Waiting for your editor to close the file...
+[master ce4b855] added first text
+ 1 file changed, 1 insertion(+)
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git log
+commit ce4b855e289e4986393f2ba8ac4d1e6613cfb46b (HEAD -> master)
+Author: shadid <shadidreza@iut-dhaka.edu>
+Date:   Thu May 20 02:45:59 2021 +0600
+
+    added first text
+
+commit 905d5a6ef197ac7458c8e57ad41a89387b850c89
+Author: shadid <shadidreza@iut-dhaka.edu>
+Date:   Thu May 20 02:40:17 2021 +0600
+
+    this is a new readme text file
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git remote
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ ^V
+bash: $'\026': command not found
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (master)
+$ git branch -M main
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (main)
+$ git remote add origin https://github.com/Neutron-glitch/190041219-CSE-4302.git
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (main)
+$ git remote
+origin
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (main)
+$ git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 447 bytes | 447.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Neutron-glitch/190041219-CSE-4302.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (main)
+$ touch all_git_codes.txt
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (main)
+$ notepad all_git_code.txt
+
+hmsha@DESKTOP-HM002 MINGW64 /d/Study/Semester_3/Assingnments_and_lab_works/LABS/OOP_git_lab/190041219 CSE 4302 (main)
+$ notepad all_git_codes.txt
+

@@ -56,8 +56,8 @@ int main()
     cout<<"Double value = "<<r1.covert()<<endl;
     r1.invert();
     r1.print();
-    cout<<endl;
 
+    cout<<"--------------------------------------"<<endl;
 
     r2.assign(0 , 15);
     r2.print();

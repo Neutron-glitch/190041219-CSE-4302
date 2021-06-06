@@ -38,6 +38,8 @@ int main()
     c1.resetCount();
     cout << "c1 count :" << c1.getCount() << endl;
 
+    cout<<"--------------------"<<endl;
+
     c2.setIncrementStep(6);
     cout << "c2 count :" << c2.getCount() << endl;
     c2.increment();

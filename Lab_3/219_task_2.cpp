@@ -59,7 +59,7 @@ int main()
 
     cout<<"--------------------------------------"<<endl;
 
-    r2.assign(0 , 15);
+    r2.assign(15 , 0);
     r2.print();
     cout<<"Double value = "<<r2.covert()<<endl;
     r2.invert();

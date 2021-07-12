@@ -83,9 +83,7 @@ Counter operator+=(Counter &lop, const Counter &rop)
 {
 
     lop.count = lop.count + rop.count;
-    //temp.step_value = lop.step_value;
-    //return temp;
-    //return
+    return lop;
 }
 
 Counter operator++(Counter &lop)
@@ -116,8 +114,8 @@ int main()
     cout << "c1+=c3 :" << c1.getCount() << endl;
     c1 = ++c1;
     cout << "++c1 :" << c1.getCount() << endl;
-    c1 = c1++;
-    cout<<"c1 ++ :"<<c1.getCount()<<endl;
+    // c1 = c1++;
+    // cout<<"c1 ++ :"<<c1.getCount()<<endl;
 
     return 0;
 }

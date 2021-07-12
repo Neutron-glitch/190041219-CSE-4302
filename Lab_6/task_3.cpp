@@ -15,6 +15,12 @@ public:
     {
     }
 
+    void display()
+    {
+        cout<<"abscissa value :"<<x<<endl;
+        cout<<"ordinate value : "<<y<<endl;
+    }
+
     float getDistance(Coordinate c)
     {
         return distance = sqrt((x - c.x) * (x - c.x) + (y - c.y) * (y - c.y));
@@ -112,6 +118,8 @@ int main()
     c1++;
 
     cout<<"c1.getdistance() :"<<c1.getDistance()<<endl;
+
+    c1.display();
 
     
 

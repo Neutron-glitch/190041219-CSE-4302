@@ -56,16 +56,13 @@ Counter operator+(const Counter &lop, const Counter &rop)
     return temp;
 }
 
-Counter operator+(const Counter &lop, int var)
+Counter operator+(const Counter &lop,int var)
 {
-    // return Counter(lop.count + var);
-
     Counter temp;
-    temp.count = lop.count + var;
-
+    temp.count = lop.count + var ;
     temp.step_value = lop.step_value;
 
-    return temp;
+    return  temp;
 }
 
 Counter operator+(int var, const Counter &rop)

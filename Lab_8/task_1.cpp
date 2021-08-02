@@ -11,7 +11,7 @@ protected:
     string shape_name;
     int dimention;
 
-public:
+protected:
     Shape()
     {
         shape_name = "";
@@ -31,7 +31,7 @@ class TwoDimentionalShape : public Shape
 protected:
     float ar, peri;
 
-public:
+protected:
     TwoDimentionalShape() : ar(0), peri(0)
     {
         dimention = 2;
@@ -50,7 +50,7 @@ class ThreeDimentionalShape : public Shape
 protected:
     float sur_area, vol;
 
-public:
+protected:
     ThreeDimentionalShape() : sur_area(0), vol(0)
     {
         dimention = 3;
@@ -86,8 +86,8 @@ public:
     {
         // calling the overloaded function of base class
         ThreeDimentionalShape::whoAmI();
-        cout << "I am a " <<shape_name<< endl;
-        cout<<"My dimention is = "<<dimention<<endl;
+        cout << "I am a " << shape_name << endl;
+        cout << "My dimention is = " << dimention << endl;
     }
 };
 
@@ -116,8 +116,8 @@ public:
         // calling the overloaded function of base class
 
         ThreeDimentionalShape::whoAmI();
-        cout << "I am a " <<shape_name<< endl;
-        cout<<"My dimention is = "<<dimention<<endl;
+        cout << "I am a " << shape_name << endl;
+        cout << "My dimention is = " << dimention << endl;
     }
 };
 
@@ -146,8 +146,8 @@ public:
         // calling the overloaded function of base class
 
         ThreeDimentionalShape::whoAmI();
-        cout << "I am a " <<shape_name<< endl;
-        cout<<"My dimention is = "<<dimention<<endl;
+        cout << "I am a " << shape_name << endl;
+        cout << "My dimention is = " << dimention << endl;
     }
 };
 
@@ -176,8 +176,8 @@ public:
         // calling the overloaded function of base class
 
         ThreeDimentionalShape::whoAmI();
-       cout << "I am a " <<shape_name<< endl;
-        cout<<"My dimention is = "<<dimention<<endl;
+        cout << "I am a " << shape_name << endl;
+        cout << "My dimention is = " << dimention << endl;
     }
 };
 
@@ -209,8 +209,8 @@ public:
         // calling the overloaded function of base class
 
         TwoDimentionalShape::whoAmI();
-        cout << "I am a " <<shape_name<< endl;
-        cout<<"My dimention is = "<<dimention<<endl;
+        cout << "I am a " << shape_name << endl;
+        cout << "My dimention is = " << dimention << endl;
     }
 };
 
@@ -240,8 +240,8 @@ public:
         // calling the overloaded function of base class
 
         TwoDimentionalShape::whoAmI();
-       cout << "I am a " <<shape_name<< endl;
-        cout<<"My dimention is = "<<dimention<<endl;
+        cout << "I am a " << shape_name << endl;
+        cout << "My dimention is = " << dimention << endl;
     }
 };
 
@@ -270,8 +270,8 @@ public:
         // calling the overloaded function of base class
 
         TwoDimentionalShape::whoAmI();
-       cout << "I am a " <<shape_name<< endl;
-        cout<<"My dimention is = "<<dimention<<endl;
+        cout << "I am a " << shape_name << endl;
+        cout << "My dimention is = " << dimention << endl;
     }
 };
 
@@ -300,8 +300,8 @@ public:
         // calling the overloaded function of base class
 
         TwoDimentionalShape::whoAmI();
-        cout << "I am a " <<shape_name<< endl;
-        cout<<"My dimention is = "<<dimention<<endl;
+        cout << "I am a " << shape_name << endl;
+        cout << "My dimention is = " << dimention << endl;
     }
 };
 
@@ -330,21 +330,21 @@ public:
         // calling the overloaded function of base class
 
         TwoDimentionalShape::whoAmI();
-        cout << "I am a " <<shape_name<< endl;
-        cout<<"My dimention is = "<<dimention<<endl;
+        cout << "I am a " << shape_name << endl;
+        cout << "My dimention is = " << dimention << endl;
     }
 };
 
 void gap()
-{   
-    cout<<endl;
-    cout<<"-------------------------"<<endl;
-    cout<<endl;
+{
+    cout << endl;
+    cout << "-------------------------" << endl;
+    cout << endl;
 }
 
 // main funtion
 int main()
-{   
+{
     circle cir(10);
     cout << "Circle area : " << cir.area() << endl;
     cout << "Circle perimeter :" << cir.perimeter() << endl;
@@ -357,7 +357,6 @@ int main()
     rec.whoAmI();
     gap();
 
-
     Triangle t(1, 2, 2);
     cout << "Triangle area : " << t.area() << endl;
     cout << "Triangle perimeter :" << t.perimeter() << endl;
@@ -365,21 +364,20 @@ int main()
     gap();
 
     Cube cu(12);
-    cout << "Cube surface area : "<<cu.area()<<endl;
-    cout<<"Cube Volume :"<<cu.volume()<<endl;
+    cout << "Cube surface area : " << cu.area() << endl;
+    cout << "Cube Volume :" << cu.volume() << endl;
     cu.whoAmI();
     gap();
 
-    Cylinder cyl(12,14.5);
-    cout << "Cylinder surface area : "<<cyl.area()<<endl;
-    cout<<"Cylinder Volume :"<<cyl.volume()<<endl;
+    Cylinder cyl(12, 14.5);
+    cout << "Cylinder surface area : " << cyl.area() << endl;
+    cout << "Cylinder Volume :" << cyl.volume() << endl;
     cyl.whoAmI();
     gap();
 
     Sphere sph(20.4);
-    cout << "Sphere surface area : "<<sph.area()<<endl;
-    cout<<"Sphere Volume :"<<sph.volume()<<endl;
+    cout << "Sphere surface area : " << sph.area() << endl;
+    cout << "Sphere Volume :" << sph.volume() << endl;
     sph.whoAmI();
     gap();
-
 }

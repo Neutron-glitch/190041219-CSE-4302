@@ -12,12 +12,12 @@ protected:
     int dimention;
 
 protected:
-    Shape()
+    Shape(int d=0):dimention(d)
     {
         shape_name = "";
-        dimention = 0;
+        
     }
-
+public:
     void whoAmI()
     {
         cout << "I am a shape. ";
@@ -26,7 +26,7 @@ protected:
 
 //creating inherited class 2d shape
 
-class TwoDimentionalShape : public Shape
+class TwoDimentionalShape : protected Shape
 {
 protected:
     float ar, peri;
@@ -63,7 +63,7 @@ protected:
     }
 };
 
-// cube class parent= threeDimentionalShape, grandparent=shape
+// cube class parent= threeDimentionalShape, grandparent=shape is-a
 class Cube : public ThreeDimentionalShape
 {
 private:

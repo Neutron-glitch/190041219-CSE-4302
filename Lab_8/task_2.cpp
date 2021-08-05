@@ -96,11 +96,14 @@ public:
     }
 };
 
-class car : public seat, public wheel, public engine, public door
+//hasa
+class car 
 {
 private:
     float max_acc, fuel_cap;
 
+    seat s[4];
+    wheel w[4];
 public:
     car(float a = 0, float b = 0) : max_acc(a), fuel_cap(b)
     {

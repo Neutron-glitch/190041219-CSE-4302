@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1629096239 source:e:\study\semester_3\assingnments_and_lab_works\labs\oop_git_lab\190041219 cse 4302\lab_9\horse\main.cpp
+	"msoftcon.h"
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1629096540 e:\study\semester_3\assingnments_and_lab_works\labs\oop_git_lab\190041219 cse 4302\lab_9\horse\msoftcon.h
+	<windows.h>
+	<conio.h>
+	<math.h>
+	<iostream>
+
+1629096655 source:e:\study\semester_3\assingnments_and_lab_works\labs\oop_git_lab\190041219 cse 4302\lab_9\horse\msoftcon.cpp
+	"msoftcon.h"
+	<conio.h>
+

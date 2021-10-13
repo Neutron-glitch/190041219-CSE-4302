@@ -1,0 +1,21 @@
+3.Write a Book class with following attributes and behaviors.
+name
+author
+publisher
+Create derived classes Academic, Entertainment. Academic object has attribute - topic and Entertainment has attribute - genre.
+
+Create an array of pointers of Book type. Store 5 Academic and 5 Entertainment objects. Display the contents of this object.
+
+
+
+
+
+
+3. Write a class Car with following attributes and behavior. Use appropriate access methods i.e. public/private. The attributes are - 
+string modelno - model no of the car
+double price - price of the car
+The behaviours are -
+Getter and setter of the attribute
+display() - print the information about the Car in the console 
+	Create an array of Car objects in the main function. Write a function called sortbyprice() which will take the array and sort the array in ascending order.
+ 
